@@ -1,0 +1,216 @@
+
+/* Formatage du texte */
+@font-face
+ {
+    font-family: 'LearningCurve';
+    src: url('web_fonts/LearningCurve_OT-webfont.eot');
+    src: url('web_fonts/LearningCurve_OT-webfont.eot?#iefix') format('embedded-opentype'),
+         url('web_fonts/LearningCurve_OT-webfont.woff') format('woff'),
+         url('web_fonts/LearningCurve_OT-webfont.ttf') format('truetype'),
+         url('web_fonts/LearningCurve_OT-webfont.svg#LearningCurve') format('svg');
+}
+
+@font-face
+ {
+    font-family: 'ballpark';
+    src: url('web_fonts/ballpark.eot');
+    src: url('web_fonts/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('web_fonts/ballpark.woff') format('woff'),
+         url('web_fonts/ballpark.ttf') format('truetype'),
+         url('web_fonts/ballpark.svg#ballpark') format('svg');
+  }
+
+
+/*Pour les grands écrans */
+@media screen and (min-width: 1024px)
+{
+
+
+
+/* Titre */
+
+header
+{
+	display: inline flex;
+	text-align : center;
+	width : 40%;
+	margin : auto;
+	padding: 20px;
+	line-height: 8px;
+	color: rgb(252,181,5);
+	text-shadow: white 0 0 4px;
+	border: solid black 2px;
+	border-radius: 6px;
+	border-spacing: 1px;
+	background-color: white;
+	opacity: 0.9;
+	background: url("images/psycho.jpg");
+
+}
+
+h1
+{
+	font-family: LearningCurve, Arial, serif;
+	font-size: 5em;
+}
+
+em
+{
+	font-family: Arial, serif;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+/* Nav */
+
+nav
+{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 250px;
+	top: 80px; 
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+}
+
+
+/* Positionnement des blocs */
+
+
+
+.total
+{
+	vertical-align: top;
+	flex-wrap: nowrap;
+	width: 70%;
+	margin: auto;
+}
+
+.p1, .p2, .p3, .p4
+{
+	border-radius: 6px;
+	border : solid rgb(237,0,0) 8px;
+	padding: 8px;
+	margin-top: 20px;
+	margin-right: 5px;
+	margin-left: 5px;
+	text-align: center;
+	background-color: white;
+	opacity: 0.8;
+}
+
+.up
+{
+	display: inline;
+}
+
+h3, h4, p
+{
+	line-height: 10px;
+}
+
+.p2 p, .p3 p,.p4 p
+{
+	line-height: 15px;
+}
+
+
+
+}
+
+
+
+
+
+
+
+/***************************/
+/* Pour les petits écrans */
+/**************************/
+
+@media all and (max-width: 1024px)
+{
+
+.bordure
+{
+	display: none;
+}
+
+
+.to
+{
+	display: block;
+	text-align: center;
+	padding: 1px;
+	size: 23px 26px 23px 26px;	
+	text-align: center;
+}
+
+
+/* Blocs */
+.total
+{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+}
+
+.p1, .p2, .p3
+{
+	border-radius: 6px;
+	border : solid black;
+	margin: 2px;
+	padding: 3px;
+	text-align: center;
+}
+
+
+/* Titre */
+
+h1, .soustitre
+{
+	font-family: ballpark, Arial, serif;
+	color: rgba(195,21,52,0.7);
+	font-size: 3em;
+	text-align : center;
+}
+
+
+/*Couleurs des blocs */
+.p1
+{
+	background-color: rgb(205,0,0);
+}
+
+.p2
+{
+	background-color: rgb(213,81,26);
+}
+
+.p3
+{
+	background-color: rgb(208,172,47);
+}
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
